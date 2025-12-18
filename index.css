@@ -363,3 +363,37 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background: #f97316;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+    z-index: 1000;
+    box-shadow: 0 4px 20px rgba(249, 115, 22, 0.3);
+}
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.back-to-top:hover {
+    background: #ea580c;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 30px rgba(249, 115, 22, 0.5);
+}
+
+.back-to-top:active {
+    transform: translateY(-2px);
+}
